@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <img class="img1" src="logo2.png" alt="Logo">
+        <div class="uni"><h1>Instituto Tecnológico de Huejutla</h1></div>
+        <img class="img2" src="logo1.png" alt="Logo">
+    </header>
+    
+    <div class="contenedor2">
+        <form class="form-dos" id="form-control">
+            <div class="form">
+                <h3>BIENVENIDO</h3>
+                <h4>Inicia el Registro</h4>
+            </div>
+    
+            <!-- Contenedor para agrupar Numero de Control y Apellido Paterno -->
+            <div class="control-app">
+                <div class="ncontrol">
+                    <p>Numero de Control: </p>
+                    <input type="text" id="num-control" required>
+                </div>
+
+                <div class="app">
+                    <p>Apellido Paterno: </p>
+                    <input type="text" id="apellidoPaterno" required>
+                </div>
+            </div>
+    
+            <div class="apm-nombre">
+                <div class="apm">
+                    <p>Apellido Materno: </p>
+                    <input type="text" id="apellidoMaterno" required>
+                </div>
+    
+                <div class="nombre">
+                    <p>Nombre(s):</p>
+                    <input type="text" id="nombre" required>
+                </div>
+            </div>
+    
+            <div class="sexo">
+                <p>Sexo: </p>
+                <input type="radio" value="1" name="sexo" required> Hombre
+                <input type="radio" value="2" name="sexo" required> Mujer
+            </div>
+    
+            <div class="fecha-correo">
+                <div class="fechan">
+                    <p>Fecha de Nacimiento: </p>
+                    <input type="date" id="fechaNacimiento" required>
+                </div>
+    
+                <div class="correo">
+                    <p>Correo: </p>
+                    <input type="email" id="correo" required>
+                </div>
+            </div>
+    
+            <div class="tel-direc">
+                <div class="tel">
+                    <p>Numero de Telefono: </p>
+                    <input type="text" id="telefono" required>
+                </div>
+    
+                <div class="direc">
+                    <p>Domicilio: </p>
+                    <input type="text" id="domicilio" required>
+                </div>
+            </div>
+    
+            <div class="municipio-estado">  
+                <div class="municip">
+                    <p>Municipio: </p>
+                    <input type="text" id="municipio" required>
+                </div>
+    
+                <div class="estado">
+                    <p>Estado: </p>
+                    <input type="text" id="estado" required>
+                </div>
+            </div>
+    
+            <div class="procedencia-opciones">
+                <div class="procedencia">
+                    <p>Instituto de Procedencia:</p>
+                    <input type="text" id="procedencia" required>
+                </div>
+    
+                <label class="opciones" for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="Ing. en Agronomía">Ing. en Agronomía</option>
+                    <option value="Ing. en Sistemas Computacionales">Ing. en Sistemas Computacionales</option>
+                    <option value="Lic. en Biología">Lic. en Biología</option>
+                    <option value="Ing. en Gestión Empresarial">Ing. en Gestión Empresarial</option>
+                </select>
+            </div>
+    
+            <div class="periodo">
+                <p>Periodo de Ingreso: </p>
+                <input type="month" id="periodoIngreso" required>
+            </div>
+
+            <div class="botones">
+                <button type="submit" class="btn">Registrar</button>
+                <button type="reset" class="btn">Cancelar</button>
+            </div>
+        </form>
+
+        <!-- Mensaje de confirmación o error -->
+        <div id="message" class="mensaje"></div>
+
+        <!-- Imagen al lado del formulario -->
+        <img class="img4" src="imagen5.png" alt="Imagen">
+    </div>
+    
+    <script src="validarFormulario.js"></script>
+</body>
+</html>
